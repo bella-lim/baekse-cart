@@ -183,3 +183,26 @@ a { color: var(--green); }
   padding: 14px 18px;
   margin-bottom: 16px;
 }
+
+
+/* 3초 테스트: 핵심 메시지를 먼저 읽히게 하고 장식을 줄입니다. */
+.site-header { padding: 12px 0; }
+.brand { font-size: 1.15rem; line-height: 1.2; }
+.brand small { display: none; }
+.hero { background: #F4F7F4; color: var(--text); padding: 44px 0 36px; text-align: left; }
+.hero h1 { color: #173D2C; font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.12; letter-spacing: -0.04em; max-width: 760px; margin: 0 0 16px; }
+.hero p { color: #42564B; font-size: 1.05rem; line-height: 1.5; max-width: 680px; opacity: 1; }
+.section { padding-top: 30px; }
+.section-sub { font-size: 0.9rem; margin-bottom: 12px; }
+.pick { border: 1px solid #E2E9E3; border-radius: 14px; box-shadow: 0 4px 18px rgba(25,54,38,0.08); }
+.pick .tag { font-size: 0.85rem; padding: 4px 12px; margin-bottom: 8px; }
+.cat-card { padding: 20px; box-shadow: none; border-color: #E2E9E3; }
+.cat-card .icon { display: none; }
+.trust { margin-top: 28px; }
+@media (max-width: 600px) {
+  .hero { padding: 36px 0 30px; }
+  .hero h1 { font-size: 2.1rem; }
+  .section { padding-top: 26px; }
+  .pick { padding: 20px; }
+  .cat-card { padding: 16px; }
+}
